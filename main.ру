@@ -1,0 +1,26 @@
+import tkinter as tk
+from tkinter import ttk, messagebox
+import json
+import os
+
+# --- Основная логика приложения ---
+class MovieLibraryApp:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Movie Library")
+        self.movies = []
+        self.load_movies()
+        self.create_widgets()
+
+    def create_widgets(self):
+        # ... (весь код по созданию виджетов из предыдущего ответа)
+        # Поля ввода, кнопки, таблица и т.д.
+        # Метод create_widgets() делает код __init__ чище.
+
+    # ... (все остальные методы: add_movie, update_tree и т.д.)
+
+# --- Точка входа в программу ---
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = MovieLibraryApp(root)
+    root.mainloop()
